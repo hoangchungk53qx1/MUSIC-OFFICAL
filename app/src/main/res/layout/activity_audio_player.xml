@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo_256dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgAvatar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/txtPositionTime"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#111"/>
+
+        <SeekBar
+            android:id="@+id/sbProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp" />
+
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#111"
+            android:layout_gravity="end"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_skip_previous_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClickPlayAndPause"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_skip_next_black_24dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hơn Cả Yêu"
+        android:textStyle="bold"
+        android:textColor="#111"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/txtSinger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Ca sỹ: Đức Phúc"
+        android:textColor="#111"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Ca sỹ: Đức Phúc"
+        android:textColor="#111"/>
+</LinearLayout>
